@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b1220">
+    <title>Enterprise Nginx CI/CD</title>
+    <style>
+      :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+      body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0b1220; color: #e6edf7; }
+      main { max-width: 42rem; padding: 3rem; border: 1px solid #263449; border-radius: 1rem; background: #111c2e; }
+      h1 { margin-top: 0; color: #63d5c3; }
+      p { line-height: 1.6; color: #c1ccdc; }
+      code { color: #a9d8ff; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Enterprise Nginx CI/CD</h1>
+      <p>This page was built into an immutable container image and is served by an unprivileged Nginx process.</p>
+      <p>Delivery path: <code>GitHub → Jenkins → Trivy → Amazon ECR → Helm → Amazon EKS</code></p>
+    </main>
+  </body>
+</html>
