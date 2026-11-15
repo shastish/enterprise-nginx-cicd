@@ -41,7 +41,7 @@ pipeline {
                     if (!(params.AWS_REGION ==~ /[a-z]{2}(-[a-z0-9]+)+-[0-9]/)) {
                         error('AWS_REGION must be a valid region identifier, for example ap-south-1.')
                     }
-                    if (!(params.ECR_REPOSITORY ==~ /[a-z0-9]+([._/-][a-z0-9]+)*/)) {
+                    if (!(params.ECR_REPOSITORY ==~ /[a-z0-9]+([._\/-][a-z0-9]+)*/)) {
                         error('ECR_REPOSITORY contains invalid characters.')
                     }
                     if (!(params.EKS_CLUSTER ==~ /[A-Za-z0-9][A-Za-z0-9_-]{0,99}/)) {
